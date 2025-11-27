@@ -1,10 +1,10 @@
 <!DOCTYPE html>
 <html lang="en">
-  <head>
-    <meta charset="UTF-8" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>GenZ Trendz - Profile</title>
-    <link rel="stylesheet" href="style.css" />
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>GenZ Trendz - Contact</title>
+    <link rel="stylesheet" href="style.css">
     <link
       rel="stylesheet"
       href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css"
@@ -12,50 +12,54 @@
       crossorigin="anonymous"
       referrerpolicy="no-referrer"
     />
-    <style>
-      .profile-container {
-        text-align: center;
-        margin: 30px auto;
-        max-width: 900px;
-        padding: 20px;
-      }
-      .profile-container h2 {
-        margin-bottom: 20px;
-      }
-      .profile-card {
-        background: var(--bg-color);
-        padding: 20px 30px;
-        border-radius: 10px;
-        box-shadow: 0 2px 8px rgba(0, 0, 0, 0.2);
-        display: inline-block;
-        width: 100%;
-      }
-      .profile-details {
-        text-align: left;
-        margin-bottom: 15px;
-      }
-      .profile-details p {
-        margin: 8px 0;
-      }
-      .btn_2 {
-        padding: 8px 16px;
-        margin: 5px;
-        border: none;
-        border-radius: 5px;
-        background: orange;
-        color: #fff;
-        cursor: pointer;
-      }
-      .logout {
-        background: #dc3545;
-      }
 
-      .btn:hover {
-        opacity: 0.9;
-      }
+    <style>
+        .contact{
+            display: flex;
+            height: 100vh;
+            justify-content: center;
+            align-items: center;
+        }
+
+        .form{
+            width:500px;
+            height:500px;
+            background-color: bisque;
+            border-radius: 10px;
+            border: none;
+            box-shadow: 0 0 5px blanchedalmond;
+        }
+
+        h1{
+            font-size: 35px;
+            color:black;
+            margin-top: 10px;
+            text-align: center;
+        }
+
+        label{
+            font-size:22px;
+            margin-left: 60px;
+            margin-top: 20px;
+            margin-bottom: 20px;
+        }
+
+        input{
+            font-size:18px;
+            margin-left:60px ;
+        }
+
+        textarea {
+            margin-left: 60px;
+        }
+
+        button{
+            margin-left: 60px;
+            color:white;
+        }
     </style>
-  </head>
-  <body>
+</head>
+<body>
     <!-- header  -->
     <header class="main-header">
       <nav class="navbar">
@@ -211,7 +215,7 @@
 
     <div class="mobile-menu" id="mobile-menu">
       <div class="mobile-menu-header">
-        <a href="index.html" class="nav-logo">GenZ Trendz</a>
+        <a href="index.html" class="nav-logo">GenZ Trendz - Home</a>
         <button class="close-btn" id="close-btn">
           <i class="fa-solid fa-times"></i>
         </button>
@@ -315,112 +319,42 @@
       </ul>
     </div>
 
-    <div class="menu_overlay" id="menu_overlay"></div>
-    <div class="profile-container">
-      <h2>User Profile</h2>
-      <div class="profile-card">
-        <div class="profile-details">
-          <p><strong>Name:</strong> <span id="userName">Loading...</span></p>
-          <p><strong>Email:</strong> <span id="userEmail">Loading...</span></p>
-        </div>
-        <button id="editBtn" class="btn btn_2">Edit Profile</button>
-        <button id="profileLogout" class="btn btn_2 logout">Logout</button>
-      </div>
+    <div class="contact">
+        <form class="form">
+        <h1>Contact GenZ Trendz :)</h1>
+        <br>
+        <br>
+        <label>Full Name: </label>
+        <br>
+        <br>
+        <input type="text" placeholder="enter your full name" required/>
+        <br>
+        <br>
+
+        <label>Email: </label>
+        <br>
+        <br>
+        <input type="email" placeholder="enter your email" required/>
+        <br>
+        <br>
+
+        <label>Phone No: </label>
+        <br>
+        <br>
+        <input type="tel" placeholder="enter your phone number" required/>
+        <br>
+        <br>
+
+        <label>Enter your message: </label>
+        <br>
+        <br>
+        <textarea row="50" col="50"></textarea>
+        <br>
+        <br>
+
+        <button class="btn">Submit</button>
+    </form>
     </div>
-    <footer class="main-footer">
-      <div class="footer-content">
-        <div class="footer-column">
-          <h4>GenZ Trendz</h4>
-          <p>
-            Your one-stop destination for the latest trends in fashion and
-            accessories. Quality and style delivered to your doorstep.
-          </p>
-          <div class="social-icons">
-            <a href="#" aria-label="Facebook"
-              ><i class="fab fa-facebook-f"></i
-            ></a>
-            <a href="#" aria-label="Twitter"><i class="fab fa-twitter"></i></a>
-            <a href="#" aria-label="Instagram"
-              ><i class="fab fa-instagram"></i
-            ></a>
-            <a href="#" aria-label="Pinterest"
-              ><i class="fab fa-pinterest-p"></i
-            ></a>
-          </div>
-        </div>
-        <div class="footer-column">
-          <h4>Shop</h4>
-          <ul>
-            <li><a href="shop.html?gender=Men">Men's Collection</a></li>
-            <li><a href="shop.html?gender=Women">Women's Fashion</a></li>
-            <li><a href="shop.html?category=Accessories">Accessories</a></li>
-            <li><a href="#">New Arrivals</a></li>
-            <li><a href="#">Sale & Offers</a></li>
-          </ul>
-        </div>
-        <div class="footer-column">
-          <h4>Support</h4>
-          <ul>
-            <li><a href="#">Contact Us</a></li>
-            <li><a href="#">FAQ</a></li>
-            <li><a href="#">Shipping & Returns</a></li>
-            <li><a href="#">Track Your Order</a></li>
-            <li><a href="#">Privacy Policy</a></li>
-          </ul>
-        </div>
-        <div class="footer-column">
-          <h4>Stay Updated</h4>
-          <p>Subscribe to our newsletter for the latest updates and offers.</p>
-          <form class="newsletter-form">
-            <input type="email" placeholder="Your email address" required />
-            <button type="submit">Go</button>
-          </form>
-        </div>
-      </div>
-      <div class="footer-bottom">
-        <p>&copy; 2025 GenZ Trendz. All Rights Reserved.</p>
-        <div class="payment-icons">
-          <i class="fab fa-cc-visa"></i>
-          <i class="fab fa-cc-mastercard"></i>
-          <i class="fab fa-cc-paypal"></i>
-          <i class="fab fa-cc-amex"></i>
-        </div>
-      </div>
-    </footer>
 
-    <script src="/js/modal.js"></script>
-    <script src="/js/constant.js"></script>
-    <script type="module">
-      import { userNavbarHandler } from "/js/navbar.js";
-      import { getProfile, logoutUser } from "/js/user.js";
-      userNavbarHandler();
-      const cartCountitems = document.getElementById("cartCountitems");
-      const cartLength = JSON.parse(localStorage.getItem("cart")) || [];
-      if (cartLength.length > 0) {
-        cartCountitems.textContent = cartLength.length;
-      }
-      renderAuthModal();
-
-      const userName = document.getElementById("userName");
-      const userEmail = document.getElementById("userEmail");
-      const profileLogout = document.getElementById("profileLogout");
-
-      const fetchUserProfile = async () => {
-        try {
-          const data = await getProfile();
-          console.log("data :", data);
-
-          if (data.success) {
-            userName.textContent = data.user.name;
-            userEmail.textContent = data.user.email;
-          }
-        } catch (error) {}
-      };
-      profileLogout.addEventListener("click", () => {
-        logoutUser();
-        window.location.href = "index.html";
-      });
-      fetchUserProfile();
-    </script>
-  </body>
+</body>
 </html>

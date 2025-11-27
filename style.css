@@ -539,7 +539,7 @@ button[type="submit"] {
   padding: 0 10px;
 }
 .filter-button {
-  background-color: #e3e3e3;
+  background-color: orange;
   border: 1px solid #d5d9d9;
   border-radius: 3px;
   padding: 8px 15px;
@@ -550,7 +550,7 @@ button[type="submit"] {
   transition: background-color 0.2s;
 }
 .filter-button.active {
-  background-color: #111;
+  background-color: orange;
   border-color: #111;
   font-weight: bold;
   color: #fff;
@@ -605,7 +605,7 @@ button[type="submit"] {
   position: absolute;
   top: 10px;
   left: 10px;
-  background: #cc0c39;
+  background: orange;
   color: white;
   font-size: 12px;
   padding: 3px 6px;
@@ -623,10 +623,10 @@ button[type="submit"] {
 .product-price {
   font-size: 18px;
   font-weight: bold;
-  color: #b12704;
+  color: orange;
 }
 .product-rating {
-  color: #b12704;
+  color: orange;
   font-size: 12px;
   margin-bottom: 5px;
 }
